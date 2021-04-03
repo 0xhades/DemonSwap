@@ -142,7 +142,7 @@ func requestBin() {
 
 	jsonStr := []byte(`{"username":"` + target + `", "attempts":` + fmt.Sprintf("%v", counter) + `, "swapper": "` + DiscRights + `"}`)
 
-	req, _ := http.NewRequest("POST", "https://3828a5392527659927db0481f5955372.m.pipedream.net", bytes.NewBuffer(jsonStr))
+	req, _ := http.NewRequest("POST", "https://_.m.pipedream.net", bytes.NewBuffer(jsonStr))
 	req.Header.Set("Content-Type", "application/json")
 
 	_, err := http.DefaultClient.Do(req)
